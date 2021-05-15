@@ -1,0 +1,9 @@
+/* pages/address/address.wxss */
+page{
+  padding:10rpx;
+  box-sizing: border-box;
+}
+input{
+  border: 1px solid silver ;
+  margin-top:10rpx
+}

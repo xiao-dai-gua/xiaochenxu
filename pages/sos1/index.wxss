@@ -1,0 +1,60 @@
+/* pages/sos1/index.wxss */
+page{
+  background-color: red;
+}
+.container{
+  display: flex;
+  position: absolute;
+  top:150rpx;
+  left:180rpx;
+}
+.container .circle{
+  width: 350rpx;
+  height: 350rpx;
+  background-color: #ffffff;
+  line-height: 350rpx;
+  text-align: center;
+  border-radius: 50%;
+}
+.container .circle text{
+  color:red;
+  font-size: 150rpx;
+}
+.button{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.button .help{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+}
+.button image{
+  width: 100rpx;
+  height: 100rpx;
+  margin-bottom: 10rpx;
+}
+.button text{
+  color:#ffffff;
+  letter-spacing: 8rpx;
+}
+.button .ring{
+  position:absolute;
+  top:100rpx;
+  left:200rpx;
+
+}
+.button .call{
+  position:absolute;
+  top:310rpx;
+  left:300rpx;
+}
+.button .information{
+  position: absolute;
+  top:510rpx;
+  left:200rpx;
+}

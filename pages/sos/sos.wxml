@@ -1,0 +1,21 @@
+<!--pages/sos/sos.wxml-->
+<view class="container">
+  <view  class="circle"  bindtap="first_sos"  animation="{{animation}}">
+    <text>SOS</text>
+  </view>
+ 
+  <view class="button">
+    <view class="help ring" bindtap="ring">
+      <image src="img/警铃2.png"></image>
+      <text>警笛</text>
+    </view>
+    <view class="help call">
+      <image src="img/来电.png"></image>
+      <text>致电</text>
+    </view>
+    <view class="help information">
+      <image src="img/消 息.png"></image>
+      <text>求救</text>
+    </view>
+  </view>
+</view>

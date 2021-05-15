@@ -1,0 +1,35 @@
+{
+  "setting": {},
+  "condition": {
+    "plugin": {
+      "list": []
+    },
+    "game": {
+      "list": []
+    },
+    "gamePlugin": {
+      "list": []
+    },
+    "miniprogram": {
+      "list": [
+        {
+          "name": "pages/address/address",
+          "pathName": "pages/address/address",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/sos/sos",
+          "pathName": "pages/sos/sos",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/sos1/index",
+          "pathName": "pages/sos1/index",
+          "scene": null
+        }
+      ]
+    }
+  }
+}
