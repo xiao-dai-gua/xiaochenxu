@@ -1,0 +1,83 @@
+/* pages/set_information/index.wxss */
+.contain{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+ }
+
+ .address_info{
+  width: 100%;
+  text-align: center;
+  font-weight:bold;
+  letter-spacing: 10rpx;
+  font-size:45rpx;
+  margin-top: 20rpx;
+}
+.address{
+  width:700rpx;
+  margin-top:20rpx;
+  line-height: 80rpx;
+  letter-spacing: 8rpx;
+  text-align: center;
+  border: 2px solid #ffffff;
+  border-radius: 30rpx;
+  font-size: 45rpx;
+  color: #ffffff;
+  background-color: red;
+}
+.address_help{
+  width:700rpx;
+  height: 130rpx;
+  margin-top:20rpx;
+  line-height: 130rpx;
+  letter-spacing: 8rpx;
+  text-align: center;
+  border: 2px solid #ffffff;
+  border-radius: 30rpx;
+  font-size: 45rpx;
+  color: aliceblue;
+  background-color: red;
+}
+.location{
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-items: center;
+  text-align: center;
+  margin-bottom: 10rpx;
+}
+.information{
+  height: 40rpx;
+  width: 600rpx;
+  margin-top: 40rpx;
+  border: 2px solid red;
+  padding: 20rpx;
+  text-align: center;
+  margin-bottom: 2rpx;
+}
+.sent{
+  color:#ffffff;
+  height: 80rpx;
+  width: 80rpx;
+  background-color: red;
+  margin-left: 1rpx;
+  text-align: center;
+  line-height: 80rpx;
+  border: 2px solid red ;
+  margin-top:42rpx;
+
+}
+.help{
+  height: 25rpx;
+  width: 600rpx;
+  line-height: 25rpx;
+  border-bottom: 1px solid rgba(218, 189, 191, 0.5);
+  padding: 20rpx;
+  text-align: center;
+  font-size: 30rpx;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}

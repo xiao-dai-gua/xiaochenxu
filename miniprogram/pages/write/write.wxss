@@ -1,0 +1,28 @@
+/* miniprogram/pages/write/write.wxss */
+page{
+  background-image: url(https://iconfont.alicdn.com/t/9609063b-15cc-45ce-a0a7-509c2dd58504.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  -moz-background-size:100% 100% ;
+}
+.myself{
+  width: 100rpx;
+  color: blueviolet;
+  padding-bottom: 5rpx;
+  font-size: large;
+  letter-spacing:8rpx;
+  position: absolute;
+  top: 300rpx;
+  left: 80rpx;
+}
+.group{
+  width: 100rpx;
+  color: blueviolet;
+  padding-bottom: 5rpx;
+  font-size: large;
+  letter-spacing:8rpx;
+  position: absolute;
+  top: 300rpx;
+  left: 250rpx;
+}
+

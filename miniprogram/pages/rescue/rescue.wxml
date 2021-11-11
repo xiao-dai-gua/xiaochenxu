@@ -1,0 +1,20 @@
+<!--miniprogram/pages/rescue/rescue.wxml-->
+<view class="contain">
+  <swiper autoplay="{{true}} interval=100 " circular="true">
+    <swiper-item ><text class="swiper_text">人人都献出一点爱，你就会与美好相遇！</text></swiper-item>
+    <swiper-item><text class="swiper_text">你一去，他已到，人多力量大！！！</text></swiper-item>
+    <swiper-item><text class="swiper_text">请救救我好吗？ 我需要你的帮助</text></swiper-item>
+  </swiper>
+  <view wx:for="{{information}}" class="user">
+    <view class="wx_information">
+    <image src="{{item.avatarUrl}}"></image>
+    <view class="name">{{item.nickName}}</view>
+    </view>
+    <view class="box">
+    <view class="address"><text style="color:red">求救地址：</text>{{item.sos_address}}</view>
+    <view  class="address"><text style="color:red">事件描述：</text>{{item.sos_describe}}</view>
+    <view  class="address"><text style="color:red">事件状态：</text>{{item.status}}</view>
+    <view  class="address"><text style="color:red">事发时间：</text>{{item.currenTime}}</view>
+    </view>
+  </view>
+</view>

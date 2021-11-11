@@ -1,0 +1,43 @@
+<!--pages/sos1/index.wxml-->
+<view class="container">
+  <view class="circle circle1" wx:if="{{status}}" bindtap="click_sos" animation="{{sos}}">
+    <text>SOS</text>
+  </view>
+  <view class="circle" wx:else="{{!status}}" bindtap="sos1" animation="{{sos}}">
+    <text>SOS</text>
+  </view>
+  <block wx:if="{{!hasUserInfo}}">
+      <button wx:if="{{canIUseGetUserProfile}}" bindtap="click_sos"> </button>
+    </block>
+  <view class="button" >
+    <view class="call_help">
+      <view class="safe write" bindtap="write">
+      <image  class="write_image" src="img/write.png"></image>
+      <text>记录</text>
+      </view>
+    <view class="safe rescue" bindtap="rescue">
+      <image class="rescue_image"  src="img/help.png"></image>
+      <text>援助</text>
+    </view>
+    </view>
+    <view class="help ring"   bindtap="ring">
+      <image class="ring_image" src="img/ring.png"></image>
+      <text>警笛</text>
+    </view>
+  
+    <view class="help call" bindtap="call">
+      <image class="call_image" src="img/call.png"></image>
+      <text>致电</text>
+    </view>
+    <view class="help information" bindtap="information">
+      <image  class="information_image" src="img/message.png"></image>
+      <text>求救</text>
+    </view>
+    <view class="help myself" bindtap="myself">
+      <image  class="myself_image" src="img/self_sos.png"></image>
+      <text>自救</text>
+    </view>
+  </view>
+</view>
+
+

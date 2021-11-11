@@ -1,0 +1,88 @@
+/* pages/sos1/index.wxss */
+page{
+  background-color: red;
+}
+.container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left:200rpx;
+}
+.container .circle{
+  width: 350rpx;
+  height: 350rpx;
+  background-color: #ffffff;
+  line-height: 350rpx;
+  text-align: center;
+  border-radius: 50%;
+}
+.container .circle text{
+  color:red;
+  font-size: 150rpx;
+}
+.button{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.button .help{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+}
+.button image{
+  z-index: 1000rpx;
+  width: 100rpx;
+  height: 100rpx;
+  margin-bottom: 10rpx;
+}
+.button text{
+  color:#ffffff;
+  letter-spacing: 8rpx;
+}
+.button .ring{
+  position:absolute;
+  top:320rpx;
+  left:100rpx;
+
+}
+.button .call{
+  position:absolute;
+  top:470rpx;
+  left:300rpx;
+}
+.button .information{
+  position: absolute;
+  top:720rpx;
+  left:310rpx;
+}
+.button .myself{
+  position: absolute;
+  top:870rpx;
+  left:150rpx;
+}
+.call_help{
+  position: absolute;
+  top:30rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.call_help .safe{
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+}
+.call_help .rescue{
+  position: absolute;
+  right: -300rpx;
+}
+.call_help .write{
+  position: absolute;
+  left:-300rpx
+}

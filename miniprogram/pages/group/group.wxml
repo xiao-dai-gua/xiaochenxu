@@ -1,0 +1,20 @@
+<view class="contain">
+  <swiper autoplay="{{true}} interval=100 " circular="true">
+    <swiper-item ><text class="swiper_text">记录危险点滴，安全伴我长行</text></swiper-item>
+    <swiper-item><text class="swiper_text">不能将你打败的都将使你成长</text></swiper-item>
+    <swiper-item><text class="swiper_text">一切都过去了，勇敢面对生活</text></swiper-item>
+  </swiper>
+  <textarea placeholder="记录危险点滴"class="information"  bindblur="handhelp" value="{{describe}}" ></textarea>
+  <view class="paster" >
+  <view wx:for="{{information}}" class="show">
+    <image class="img3" src="img/11.png"></image>
+    <image class="img4" src="img/12.png"></image>
+    <view class="message"> {{item.message}}</view>
+    <view class="data">{{item.data}}</view>
+
+  </view>
+  <image  class="img1" src="img/09.png"></image>
+  <image class="img2" src="img/10.png"></image>
+  </view>
+  
+</view>

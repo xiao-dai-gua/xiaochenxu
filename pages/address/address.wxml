@@ -1,8 +1,0 @@
-<!--pages/address/address.wxml-->
-<view>
-<view>
-  地址<input type="text" name ="dizhi" value="{{address}}"/>
-</view>
-<button type="primary" bindtap="ditu">获取位置</button>
-
-</view>

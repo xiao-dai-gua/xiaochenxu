@@ -1,0 +1,34 @@
+{
+  "pages": [
+    "pages/sos1/index",
+    "pages/set_information/index",
+    "pages/myself/myself",
+    "pages/medical/medical",
+    "pages/rescue/rescue",
+    "pages/write/write",
+    "pages/mysefl_sos/myself_sos",
+    "pages/group/group"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#ffffff",
+    "navigationBarTitleText": "SOS",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json",
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置接口的效果展示"
+    }
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  },
+  "requiredBackgroundModes": [
+    "audio",
+    "location"
+  ],
+  "cloud": true,
+  "usingComponents": {}
+}

@@ -1,0 +1,31 @@
+/* miniprogram/pages/mysefl_sos/myself_sos.wxss */
+.wx_information{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-top:1rpx solid #D5D5D5;
+  margin-top: 20rpx;
+}
+.wx_information image{
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 100%;
+  margin-bottom:5rpx;
+  margin-top:20rpx;
+}
+.wx_information .name{
+  margin-left:50rpx ;
+  margin-top:20rpx ;
+}
+.box{
+ color: #000000;
+}
+ .address{
+  margin:20rpx;
+  letter-spacing: 8rpx;
+  font-size: 35rpx;
+}
+.change{
+  letter-spacing: 40rpx;
+  color: red;
+}

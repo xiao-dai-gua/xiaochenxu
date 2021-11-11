@@ -1,0 +1,16 @@
+<!--miniprogram/pages/mysefl_sos/myself_sos.wxml-->
+<view>
+  <view wx:for="{{information}}">
+    <view class="wx_information">
+    <image src="{{item.avatarUrl}}"></image>
+    <view class="name">{{item.nickName}}</view>
+    </view>
+    <view class="box">
+    <view class="address"><text style="color:red">求救地址：</text>{{item.sos_address}}</view>
+    <view  class="address"><text style="color:red">事件描述：</text>{{item.sos_describe}}</view>
+    <view  class="address"><text style="color:red">事件状态：</text>{{item.status}}</view>
+    <view  class="address"><text style="color:red">事发时间：</text>{{item.currenTime}}</view>
+    <button class="change" bindtap="change" data-information-id="{{item._id}}"><text class="status">更改事件状态</text></button>
+    </view>
+  </view>
+</view>

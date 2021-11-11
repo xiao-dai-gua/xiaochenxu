@@ -1,0 +1,148 @@
+// pages/set_information/index.js
+wx.cloud.init();
+var util = require('../../utils/util.js');
+const app = getApp();
+const db = wx.cloud.database();
+Page({
+
+  /**
+   * 页面的初始数据
+   */
+  data: {
+    helplist:[],
+    describe:"",
+    address:"",
+    status:true,
+    user_data:""
+  },
+sent:function(e){
+  let address = this.data.address;
+  let userInfo = app.globalData.userInfo
+  console.log(userInfo)
+  var that =this;
+  db.collection('user_location').where({
+    address:address}).get({
+    success:function(res){
+      db.collection('user').add({
+        data:{
+         nickName:userInfo.nickName,
+         avatarUrl:userInfo.avatarUrl,
+         status:"急需求救",
+         sos_address:address,
+         currenTime:that.data.currenTime,
+         sos_describe:that.data.describe,
+         user_data:that.data.user_data
+        }
+        })
+      }
+  });
+    wx.showToast({
+      title: '求救成功',
+    })
+},
+  /**
+   * 生命周期函数--监听页面加载
+   */
+  onLoad: function (options) {
+    setInterval(function(){
+      this.animate('.change',[{scale:[1,1],ease:'ease-out',opacity:0},{scale:[1.2,1.2],ease:'ease-in',opacity:1}],1000);
+    }.bind(this), 10);
+     // 调用函数时，传入new Date()参数，返回值是日期和时间
+     var currenTime= util.formatTime(new Date());
+     // 再通过setData更改Page()里面的data，动态更新页面的数据
+     this.setData({
+       currenTime: currenTime
+     });
+     var b="";
+     for(var i=0 ;i<11;i++){
+       b+=currenTime[i];
+     }
+     this.setData({
+       user_data:b
+     })
+    this.setData({
+      address:options.address
+    })
+  },
+  help_information:function(e){
+    let describe = e.currentTarget.dataset.informationId;
+    this.setData({
+      describe:describe
+    })
+   },
+  
+  handhelp(e){
+    const {value} =e.detail;
+    if(!value.trim()){
+      return
+    }
+    this.qsearch(value);
+  },
+  async qsearch(query){
+    var that = this
+    const _ = db.command
+    db.collection('tip').where(_.or([{
+      help:db.RegExp({
+        regexp:'.*'+query,
+        options:'i',
+      })
+    }])).get({
+      success:res => {
+        console.log(res)
+        that.setData({
+          helplist:res.data
+        })
+
+      }
+    })
+    },
+    
+  /**
+   * 生命周期函数--监听页面初次渲染完成
+   */
+  onReady: function () {
+
+  },
+
+  /**
+   * 生命周期函数--监听页面显示
+   */
+  onShow: function () {
+
+  },
+
+  /**
+   * 生命周期函数--监听页面隐藏
+   */
+  onHide: function () {
+
+  },
+
+  /**
+   * 生命周期函数--监听页面卸载
+   */
+  onUnload: function () {
+
+  },
+
+  /**
+   * 页面相关事件处理函数--监听用户下拉动作
+   */
+  onPullDownRefresh: function () {
+
+  },
+
+  /**
+   * 页面上拉触底事件的处理函数
+   */
+  onReachBottom: function () {
+
+  },
+
+  /**
+   * 用户点击右上角分享
+   */
+  onShareAppMessage: function () {
+
+  }
+})

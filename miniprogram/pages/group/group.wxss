@@ -1,0 +1,65 @@
+swiper{
+  width: 100%;
+  height: 100rpx;
+}
+swiper-item text{
+  font-size: 40rpx;
+  text-align: center;
+  line-height: 100rpx;
+  color:#ad0dec;
+  margin-left:20rpx;
+  letter-spacing: 5rpx;
+}
+.paster image{
+  width: 200rpx;
+  height: 200rpx;
+}
+.img1{
+  position: absolute;
+  top:10rpx;
+  right: -10rpx;
+}
+.img2{
+  position: absolute;
+  top:300rpx;
+  right:20rpx
+}
+.information{
+  margin-top: 30rpx;
+  margin-left: 20rpx;
+  padding: 0rpx;
+  width: 700rpx;
+  height:350rpx;
+  border: 2px solid hsla(335, 90%, 49%, 0.555);
+  letter-spacing: 10rpx;
+  line-height: 50rpx;
+}
+.show{
+  margin-top:50rpx ;
+  margin-left: 20rpx;
+  padding: 0rpx;
+  width: 700rpx;
+  border: 2px solid hsla(335, 90%, 49%, 0.555);
+  letter-spacing: 10rpx;
+  line-height: 50rpx;
+  position: relative;
+}
+.img3{
+  position: absolute;
+  top:-120rpx;
+  left: -50rpx;
+}
+.img4{
+  position: absolute;
+  bottom:-100rpx;
+  right:-10rpx;
+}
+.message{
+  text-indent:2em;
+  color: #bb1eebee;
+}
+.data{
+  color:blue;
+
+}
+

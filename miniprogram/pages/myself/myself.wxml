@@ -1,0 +1,43 @@
+<!--pages/myself/myself.wxml-->
+<view class="contain">
+  <view class="swiper_img">
+  <swiper indicator-dots="{{true}}" autoplay="{{true}}" >
+  <swiper-item><image src="img/1.png" class="img-bottom" ></image></swiper-item>
+  <swiper-item><text class="swiper_text">加油，你能行！</text></swiper-item>
+  </swiper>
+  </view>
+  <view class="content_box">
+    <view>
+    <text class="content">
+      <text style="color:#00FF00">一、火灾报案步骤</text>
+
+      1、应保持镇定，拨打119电话。2、述明详细灾害地点或附近目标。3、简述灾情状况。4、留下电话及地址以便进一步联系。  
+
+      <text style="color:#00FF00">二、发生火灾时应注意的事项 </text>
+
+    1、切忌慌乱，判断火势来源，采取与火源相反方向逃生。2、切勿使用升降设备(电梯)逃生。3、切勿返入屋内取回贵重物品。
+
+    <text style="color:#00FF00"> 三、消防栓的使用方法   </text> 
+
+    1、打开消防栓箱。2、延伸水带。3、转开止水阀。   
+    四、干粉灭火器的使用方法  1、将安全梢拉开。2、将皮管朝向火点。3、用力压下把手，选择上风位置接近火点，将干粉射入火焰基部。
+    
+    <text style="color:#00FF00">（一） 拨打120</text>
+
+      在生命出现危险需要紧急救治时，人们必须争分夺秒，所以及时正确地拨打急救电话显得十分重要。人们在拨打“120”电话时，切勿惊慌，要保持镇静，讲话应清晰、简练易懂，不要说方言。拨通电话后，要告知医生如下内容：
+      1.准确表达求救地点，比如所在街、路，附近是否有公交线路，大型企事业单位，明显建筑物或大、中、小学校等；
+      2.简要描述病情，告知病人最典型的症状表现、性别、年龄等；
+      3.等待救护车时不要把病人提前搀扶或抬出来，应先派一人在与急救人员约好的地点等待接应救护车并指路； 
+      4.用来拨打“120”的求救电话要保持畅通，以便调度员与之随时取得联系。
+  </text>
+    </view>
+    <view>
+      <view class="box1" bindtap="fire">
+      <image class="history" src="img/history.png"></image>
+      <text class="help">医护</text>
+      </view>
+  
+  
+    </view>
+    </view>
+</view>

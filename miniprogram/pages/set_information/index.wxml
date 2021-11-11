@@ -1,0 +1,16 @@
+<!--pages/set_information/index.wxml-->
+<view class="contain">  
+  <text class="address_info">事件描述:</text> 
+  <view class="location">
+  <input placeholder="请输出具体事件"class="information"  bindinput="handhelp"  value="{{describe}}"></input>
+  <view class="sent" bindtap="sent">发送</view>
+  </view>
+  <view wx:if="{{status}}"   wx:for="{{helplist}}" data-information-id="{{item.help}}" wx:for-item="item"  class="help" bindtap="help_information"> 
+    {{item.help}}
+  </view>             
+  <text class="address_info">位置信息：</text>
+  <text class="address">{{address}}</text>
+  <text class="address_info" >呼救信息：</text>
+  <text class="address_help">此处我需要您帮助！</text> 
+  
+</view>

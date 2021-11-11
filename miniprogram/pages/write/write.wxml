@@ -1,0 +1,10 @@
+<!--miniprogram/pages/write/write.wxml-->
+<view>
+  <view class="myself button" bindtap="sos">
+    <text>求救</text>
+  </view>
+  <view class="group button" bindtap="group">
+    <text>成长</text>
+  </view>
+</view>
+

@@ -19,14 +19,44 @@
           "scene": null
         },
         {
-          "name": "pages/sos/sos",
-          "pathName": "pages/sos/sos",
+          "name": "pages/sos1/index",
+          "pathName": "pages/sos1/index",
           "query": "",
           "scene": null
         },
         {
-          "name": "pages/sos1/index",
-          "pathName": "pages/sos1/index",
+          "name": "pages/set_information/index",
+          "pathName": "pages/set_information/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/myself/myself",
+          "pathName": "pages/myself/myself",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/rescue/rescue",
+          "pathName": "pages/rescue/rescue",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/write/write",
+          "pathName": "pages/write/write",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/mysefl_sos/myself_sos",
+          "pathName": "pages/mysefl_sos/myself_sos",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/group/group",
+          "pathName": "pages/group/group",
           "scene": null
         }
       ]
